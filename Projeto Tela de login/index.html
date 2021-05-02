@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Projeto Tela Login</title>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+
+</head>
+<body>
+   <header>
+        <h1></h1>
+        <nav></nav>
+   </header>
+
+   <section class="content-center">
+       <div class="text-center">
+            
+        <img src="assets/images/login_image.png" alt="Logo da Hcode">
+             
+       </div>
+
+       <form action="/login" method="POST" id="form-login">
+            <div>
+                <input type="email" id="email" placeholder="Digite o seu email" required>
+            </div>
+            <div>
+                <input type="password" id="password" placeholder="Digite a senha" required>
+            </div>
+            <div>
+                <button id="btn-submit">Enviar</button>
+            </div>
+        </form>
+
+   </section>
+
+   <footer>
+        <p>Thiago de Carvalho</p>
+   </footer>
+   <!-- 
+    Inserir imagens:
+        A) alocadas na mesma pasta "nome da imagem com extenção"
+        B) em subpastas "nome do caminho de subpastas/nome da imagem com extenção"
+        C) em outro local "../nome do caminho de subpastas/nome da imagem com extenção"
+
+    CSS - Cascade Style Sheet (intro)
+        linguagem que permite decorar o site ou app
+        a) SINTAXE:
+        Grupo de seletores { propriedade da declaração : valor da declaração; }
+
+        Tipos de Seletores
+            Universal = * -> significa seleção de todas as tags a partir do body
+            Tipo = body ou header ou section ou footer
+            Classes = classes Css = são iniciadas por . formatam elemetos de mais maneiras
+            Atributos = [type="text"] - aplica formatação para todos as tags de mesmo tipo
+            Pseudos = :hover - condiciona a formatação a um passar de mouse, ou foco
+            ID = #conteúdo - elemento especifico formatado, não deve ser repetio, se for repetir use  a classe
+    
+    JavaScript (intro)
+        é muito difundida, uma linguagem reativa que pode ser configurada no front e back end
+        é diferente de Java
+        serve para guardar valores em variáveis 
+        serve para executar ações para determinados eventos
+        serve acessar APIs do navegador (controle do DOM, modificar o CSS, geoloc, altitude, canvas)
+            API - application program interface - um grupo de linguagem de comandos para extenção do código
+            API de terceiros - autentificações usuarios via FB por exemplo
+        
+        Como é executado
+            ordem => html/CSS/JS
+            compilado em tempo de execucao, ou seja, precisa do código fonte (arquivo.js) para execução
+            ele pode ser tanto dinâmico quanto estático
+        
+        Variáveis
+            const = constante
+            var = variável para todas as partes da página   
+            let = variável restrita a uma área mais usada 
+    
+    Json
+        é um padrão de liguagem javascript que faz a interoperabilidade entre liguagens e bancos de dados
+
+
+    -->
+
+    <script src="Assets/JS/script.js"></script>
+    
+</body>
+</html>
