@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Tag Th</title>
+    <link rel="stylesheet" href="table.css">
+
+</head>
+<body>
+       
+    <table>
+        <thead>
+            <tr>
+                <th sorted="reversed"> Header 1 </th>
+                <th abbr="jan"> Janeiro </th>
+                <th> Header 3 </th>
+            </tr>
+        </thead>
+        <Tbody>
+            <tr>
+                <td colspan="2">A1</td>
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td rowspan="2">B2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>C3</td>
+            </tr>
+        </Tbody>
+        <tfoot>
+            <tr>
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+            </tr>
+        </tfoot>
+
+    </table>    
+
+    <!-- 
+            Tag que abre e fecha, usada para definir célula para o cabeçalho da tabela. 
+            É usada dentro de uma Tag Tr.
+            Possui atributos específicos
+                Abbr - define uma abreviação do conteúdo do cabeçalho; texto
+                Colspan - Define o número de colunas que esta célula deve ocupar; número
+                headers - Define um ou mais células de cabeçalho relacionadas; ID da célula
+                rowspan - Define o número de linhas que essa célula deve ocupar; número
+                scope define se a célula é um cabeçaho de linha, coluna, grupo de linha ou grupo de coluan; col, colgroup, row, rowgroup
+                sorted - define a direção da ordem da coluna; reversed, number, reversed number, number reversed
+    -->
+</body>
+</html>

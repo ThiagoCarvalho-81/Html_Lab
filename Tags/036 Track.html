@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Tag Track</title>
+
+
+</head>
+<body>
+   
+    <video src="C:\Users\tscar\Desktop\PQVB_Germany\Pre\HTML5\Aulas\Fundamentos\videos\av1_trailer.mp4" controls width="600">
+        <track src="C:\Users\tscar\Desktop\PQVB_Germany\Pre\HTML5\Aulas\Fundamentos\videos\AV1_trailer_pt.vtt" default label="Português (Brasil)" kind="subtitles" srclang="pt">
+        <track src="C:\Users\tscar\Desktop\PQVB_Germany\Pre\HTML5\Aulas\Fundamentos\videos\AV1_trailer_jp.vtt" label="Japonês" kind="subtitles"srclang="jp">
+    </video>
+
+
+    <!-- 
+        Tag que abre e não fecha, usada para definir uma faixa de texto em uma tag de mídia.
+        usada para definir legendas em vídeos.
+        Todos atributos globais são aplicáveis
+        Possui atributos específicos
+            Default - define se esta é a faixa selecionada por padrão; default
+            Kind - define o tipo da faixa de texto; captions, chapters, descriptions, metadata; subtitles
+            Label - define rótulo da faixa de texto; nomedoimput.dir
+            src - fine qual fonte/link da faixa de texto; URL
+            srclang - define qual a linguagem dos dadso da faixa de texto. Obrigatório; Codigo da linguagem para legendas   
+    -->
+
+</body>
+</html>
