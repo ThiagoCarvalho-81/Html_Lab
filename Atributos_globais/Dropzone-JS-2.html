@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropzone-js-2</title>
+    <Style>
+    .caixa {
+        width: 100px;
+        height: 100px;
+        background-color:chocolate;
+    }
+    
+    #box-2 {
+        background-color: blueviolet;
+    }
+
+    .drop {
+        background-color: blanchedalmond;
+        width: 300px;
+        height: 300px;
+        border: crimson 2px dashed;
+    }
+    </Style>
+</head>
+<body>
+    <div class="drop" dropzone="copy">
+    <div id="c1" class="caixa" draggable="true"></div>
+    <div id="c2" class="caixa" draggable="true"></div>
+    </div>
+    <div class="drop" dropzone="copy"></div>
+    
+<script>
+
+const caixas = document.querySelectorAll('.caixa');
+const divsDrop = document.querySelectorAll('.drop')
+
+caixas.forEach(caixaEl => {
+    
+    caixaEl.addEventListener('dragstart', e => {
+    
+        e.datatransfer.setData('Text', e.target.id);
+           
+    });
+});
+
+divsDrop.forEach(divDrop => {
+
+    divDrop.addEventListener('dragover', e => {
+
+    e.preventDefault ();
+
+    });
+
+    divDrop.addEventListener('drop', e => {
+
+    const elementid = event.datatransfer.getData('Text');
+    const element = document.getElementById (elementId);
+
+    e.target.appendChild(element);
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

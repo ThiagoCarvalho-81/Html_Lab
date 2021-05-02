@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data-*</title>
+</head>
+<body>
+
+    <ul>
+        
+        <li data-id="1" data-email="tscarvalho2@hotmail.com">Thiago Carvalho</li>
+        <li data-id="2" data-email="miltonrocha@gmail.com">Milton Rocha</li>
+
+    </ul>
+
+    <script>
+        document.querySelectorAll('li').forEach(liEL => {
+        
+            console.log(liEL.dataset.email);
+
+        });
+    </script>
+
+</body>
+</html>
