@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento Error</title>
+
+
+</head>
+<body>
+   
+    <img src="C:\Users\tscar\Desktop\PQVB_Germany\Pre\HTML5\Aulas\Fundamentos\Imagens\lobo.png" alt="lobo errado" onerror="debug(event)">
+    
+    
+    <!--Exemplo de notificação simulando de uma imagem nao existente-->
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+            alert('Evento: '+ e.type);
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento Wheel</title>
+    <Style>
+        div {
+            width: 50vw;
+            height: 50vw;
+            background-color: brown;
+        }
+
+    </Style>
+    
+</head>
+<body>
+   
+    <div onwheel="debug(event)"></div>
+
+
+    <!-- 
+        Registra o rolar do botão do mouse
+    -->
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);        
+            }
+        
+    </script>
+
+</body>
+</html>

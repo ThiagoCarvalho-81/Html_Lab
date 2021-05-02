@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento Cut</title>
+
+</head>
+<body>
+
+    <input type="text" oncut="debug(event)">
+
+   <p oncut="debug(event)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deserunt dicta odit neque nemo, sint inventore eaque nobis rerum consequuntur, facilis modi sunt accusamus quibusdam. Iure ea eius odit atque.</p>
+   
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deserunt dicta odit neque nemo, sint inventore eaque nobis rerum consequuntur, facilis modi sunt accusamus quibusdam. Iure ea eius odit atque.</p>    
+   
+   <!-- Registra o corte de um texto em um parágrafo ou campo-->
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);        
+            }
+
+    </script>
+
+</body>
+</html>

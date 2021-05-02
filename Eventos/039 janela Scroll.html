@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento Scroll</title>
+    <Style>
+        body {
+            height: 200vh;
+            background-color: brown;
+            }
+    </Style>
+
+</head>
+ <body onscroll="debug(event)">
+   
+   
+    <!-- registra o uso a barra lateral de rolagem na janela ativando a bola do mouse 
+        pode ser inclusive usada dentro de uma seção-->
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);        
+            }
+
+    </script>
+
+</body>
+</html>

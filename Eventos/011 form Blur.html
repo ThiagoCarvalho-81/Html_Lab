@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento Blur</title>
+
+
+</head>
+<body onblur="debug(event)">
+   
+
+    <input type="text" onblur="debug(event)">
+    <!--quando perde p foco na janela, por exemplo minimizando
+        ou quando perde o foco no preenchimento de um campo        
+    -->
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+
+    </script>
+
+</body>
+</html>

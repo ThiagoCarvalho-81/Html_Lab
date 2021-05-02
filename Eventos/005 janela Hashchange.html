@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento Hashchange</title>
+
+
+</head>
+<body onhashchange="debug(event)">
+   
+    <!-- Exemplo que aparece ao se tentar alterar o #alguma coisa após o html-->
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+            alert('Evento: '+ e.type);
+        }
+
+    </script>
+
+</body>
+</html>

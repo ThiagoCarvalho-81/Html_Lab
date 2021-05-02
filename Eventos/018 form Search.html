@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento Search</title>
+
+
+</head>
+<body>
+   
+    <input type="search" onsearch="debug(event)">
+   
+    <!--ocorre quando executado o campo de busca -->
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+
+    </script>
+</body>
+</html>

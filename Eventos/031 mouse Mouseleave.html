@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento Mouseleave</title>
+    <Style>
+        div {
+            width: 50vw;
+            height: 50vw;
+            background-color: brown;
+        }
+
+    </Style>
+    
+</head>
+<body>
+   
+    <div onmouseleave="debug(event)" onmouseout="debug(event)"></div>
+
+
+    <!-- 
+        Registra o posisionar do mouse qndo sai no objeto, parecido com o mouseout... mesmo efeito
+    -->
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);        
+            }
+        
+    </script>
+
+</body>
+</html>

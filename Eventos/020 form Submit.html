@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento Submit</title>
+
+
+</head>
+<body>
+   
+    <form onsubmit="debug(event)">
+    <input type="text" >
+    <button type="submit">Enviar</button>
+    </form>
+    
+    <!--
+        Registra o envio do formulário
+        Nesse teste colocamos um comando javascript 'preventDefault' que interrompe a atualização da pagina 
+        após o envio para conseguirmos ver o registro no console 
+    -->
+
+
+    <script>
+        function debug(e) {
+            e.preventDefault();
+            console.log('Evento: ' + e.type);
+        }
+
+    </script>
+</body>
+</html>

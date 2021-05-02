@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento Toggle</title>
+
+</head>
+<body>
+   
+    <details  ontoggle="debug(event)">
+        <summary>Thiago</summary>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore unde at beatae enim. Totam, iusto modi. Doloremque, deserunt fugit temporibus dicta quo repellendus earum, ex possimus laborum, iste reprehenderit sint.</p>
+    </details> 
+          
+    <!-- registra quando ocorre o click para exibir ou ocultar os detalhes-->
+    
+    <script>
+         function debug(e) {
+             console.log('Evento: ' + e.type);        
+        }
+    </script>
+
+</body>
+</html>

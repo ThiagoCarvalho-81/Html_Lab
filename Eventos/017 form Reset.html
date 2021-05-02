@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento Reset</title>
+
+
+</head>
+<body>
+   
+    <form onreset="debug(event)" >
+        <input type="email">
+        <button type="reset">Limpar</button>
+    </form>
+   
+    <!--ocorre quando há reset de dados do formulário-->
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+
+    </script>
+</body>
+</html>

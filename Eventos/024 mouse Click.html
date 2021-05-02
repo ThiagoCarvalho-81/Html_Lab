@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento Click</title>
+
+
+</head>
+<body onclick="debug(event)">
+   
+    <button type="button" onclick="debug(event)"></button>
+
+
+    <!-- Registra o click do mouse é mais comumente alocado no botão-->
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);        
+            }
+
+    </script>
+
+</body>
+</html>

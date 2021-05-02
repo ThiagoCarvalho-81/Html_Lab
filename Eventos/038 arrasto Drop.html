@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento drop</title>
+    <Style>
+        #drag {
+            width: 20vw;
+            height: 20vw;
+            background-color: brown;
+        }
+        #target {
+            width: 20vw;
+            height: 20vw;
+            background-color: coral;
+        }
+
+    </Style>
+
+</head>
+ <body>
+   
+    <div id="drag" ondragstart="debug(event)" ondrag="debug(event)" ondragend="debug(event)" draggable="true"></div>
+
+    <div id="target" ondragenter="debug(event)"ondragleave="debug(event)" ondragover="cancel(event)" ondrop="debug(event)"></div>
+   
+    <!-- registra o soltar do objeto sobre algum outro objeto
+    colocamos um comando uem java para cancelar o movimento padrao de arrasto para a-->
+
+
+    <script>
+        function cancel(e) {
+            e.preventDefault();
+        }
+
+        function debug(e) {
+            console.log('Evento: ' + e.type);        
+            }
+
+    </script>
+
+</body>
+</html>

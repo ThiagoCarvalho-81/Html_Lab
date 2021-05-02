@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento Pageshow</title>
+
+
+</head>
+<body onpageshow="debug(event)">
+   
+    <!--Evento de quando a página é mostrada
+    Em caso de ocorrencia simultante com o load, o pageshow ocorre depois do load-->
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+            alert('Evento: '+ e.type);
+        }
+
+    </script>
+
+</body>
+</html>

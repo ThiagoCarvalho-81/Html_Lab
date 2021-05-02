@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Evento Durationchange</title>
+    <style>
+        video {
+            width: 80vw;
+        }
+    </style>
+
+</head>
+<body>
+   
+    <video src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4" 
+    controls 
+    ondurationchange="debug(event)"></video>
+    
+
+    
+    <!--ocorre quando o evento de midia consegue registrar a alteração de duração durante o carregamento, 
+        streaming de filmes por exemplo-->
+
+    <script>
+         function debug(e) {
+             console.log('Evento: ' + e.type);        
+        }
+    </script>
+
+</body>
+</html>
