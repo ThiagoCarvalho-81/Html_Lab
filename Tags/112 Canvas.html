@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Tag Canvas</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+
+
+</head>
+<body>
+   
+    <canvas id="quadro"></canvas>
+        
+    <!-- 
+        Tag que abre e fecha. Usada para definir um quadro de desenhos gráficos 2D ou 3D. 
+        Para desenhar é necessário usar o JavaScript.
+        usar canvas é melhor para Jogos pois acessa mais recursos da placa de video. 
+        A tag serve para reservar o espaço.
+        Herda todos atributos globais.
+        Tem dois atributos específicos
+            height - define altura do quadro; numero
+            width - define largura do quadro; numero
+    -->
+
+    <script>
+        
+        const quadro = document.querySelector('#quadro');
+        const contexto = quadro.getContext('2d');
+
+        contexto.fillStyle = '#ff0000';
+        contexto.fillRect(0, 0, 100, 100);
+
+    </script>
+
+</body>
+</html>

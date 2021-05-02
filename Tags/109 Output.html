@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Tag Output</title>
+
+
+</head>
+<body>
+   
+    <form oninput="c.value = parseInt(a.value) + parseInt(b.value)">
+
+        <input type="range" id="a" value="0" min="0" max="10">
+        + 
+        <input type="number" id="b" value="0" >
+        = 
+        <output name="c" for="a b">0</output>
+
+    </form>
+        
+    <!-- 
+        Tag que abre e fecha. Usada para mostrar o resultado de um cálculo. 
+        Normalmente usada em formulários e exibir resultado após entrada de dados. 
+        Herda todos atributos globais.
+        for - define a relação entre o resultado e os elementos usados parao claculo ;id do elemento
+        form - define qual o formulario que esse campo pertence ;id do formulario
+        name - define o nome do elemento; texto
+    -->
+
+</body>
+</html>
